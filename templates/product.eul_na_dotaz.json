@@ -1,0 +1,530 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "9b54a0e5-c077-4c4d-b987-a2c9c18a7525": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"icons-block-top\">{% if product.metafields.custom.nosnost %}\n<img class=\"icons-product-page-top\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-weight-50.png?v=1683022408\" width=\"50\" height=\"50\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/img>\n{% endif %}\n\n{% if product.metafields.custom.celkova_sirka %}\n<img class=\"icons-product-page-top\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-width-50.png?v=1687258509\" width=\"50\" height=\"50\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/img>\n{% endif %}\n\n{% if product.metafields.custom.delka_vidlic %}\n<img class=\"icons-product-page-top\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-length-64.png?v=1687258509\" width=\"50\" height=\"50\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/img>\n{% endif %}\n\n{% if product.metafields.custom.nosnost %}\n<img class=\"icons-product-page-top\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-warehouse-50.png?v=1683230284\" width=\"50\" height=\"50\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/img>\n{% endif %}\n<div><li class=\"icons-text-product-page-top\">Nosnost<\/li><li class=\"icons-text-product-page-top\">Šířka<\/li><li class=\"icons-text-product-page-top\">Délka vidlic<\/li><li class=\"icons-text-product-page-top\">Nosnost<\/li><\/div>\n<div><strong><li class=\"icons-text-product-page-top\">{{ product.metafields.custom.nosnost }}<\/li><li class=\"icons-text-product-page-top\">{{ product.metafields.custom.celkova_sirka }}<\/li><li class=\"icons-text-product-page-top\">{{ product.metafields.custom.delka_vidlic}}<\/li><li class=\"icons-text-product-page-top\">{{ product.metafields.custom.nosnost}}<\/li><\/strong><\/div>\n<\/div>"
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": false,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Výška zdvihu",
+            "size_chart_page": ""
+          }
+        },
+        "divider-1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "vendor-sku": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "cafa9602-40fc-4a98-96f2-985cf8fd1a67": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"color: red; font-weight: 700; font-size: 30px;\">Cena na dotaz<\/div>\n\n{% form 'contact' %}\n{{ form.errors | default_errors }}\n\n<div style=\"display:none;\" class=\"order-number\">\n<input type=\"text\" name=\"contact[Dotaz na cenu:{{product.title}}]\" id=\"order-number\"\/>\n<\/div>\n\n<div class=\"first-name\"><label for=\"first-name\">Jméno a příjmení\n<\/label>\n<br>\n<input type=\"text\" name=\"contact[jmeno]\" id=\"first-name\" \/>\n<\/div>\n\n<div class=\"phone\">\n<label for=\"phone\">Telefon\n<\/label>\n<br>\n<input type=\"tel\" name=\"contact[telefon]\" id=\"phone\"\/>\n<\/div>\n\n<div class=\"email\">\n<label for=\"email\">Email\n<\/label>\n<br>\n<input type=\"email\" name=\"contact[email]\" id=\"email\"\/>\n<\/div>\n\n<div class=\"message\">\n<label for=\"message\">Výška zdvihu<\/label><br>\n   <input type=\"text\" name=\"contact[vyska-zdvihu]\" id=\"message\"><\/input>\n<\/div>\n\n<div class=\"jak-kontaktovat\">\n<label for=\"jak-kontaktovat\">Jaký způsob komunikace preferujete?<\/label>\n<br>\n  <input type=\"radio\" name=\"contact[jak-kontaktovat]\" value=\"email\" id=\"email\"><label for=\"email\">Email<\/label><br>\n  <input type=\"radio\" name=\"contact[jak-kontaktovat]\" value=\"Telefon\" id=\"phone\"><label for=\"phone\">Telefon<\/label><br>\n<\/div>\n\n  <div class=\"submit\">\n    <input class=\"na-dotaz\" type=\"submit\" value=\"Poptat cenu\" \/>\n  <\/div>\n{% endform %}"
+          }
+        },
+        "a8bd77c7-585e-4f64-9f0d-7f2eb68b8816": {
+          "type": "custom-liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% if product.metafields.spin360.enabled contains 'Yes' %} <iframe src=\"https:\/\/th91ukb1jc.execute-api.us-east-1.amazonaws.com\/Prod?id=8261170463029&store=eulift\" width=\"640\" height=\"350\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/iframe> {% endif %}"
+          }
+        },
+        "divider-0": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "97e3fb95-e8e5-4640-b8cf-81f9031aa4c7": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div><\/div>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "74fcb4e7-3982-4233-8412-790c84380ec6": {
+          "type": "custom-liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"price-with-tax\">{{ product.price | times: 1.21 | money }} s DPH<\/div>\n\n<div class=\"delivery\">Doručenie: {{ 0 | money }}<\/div>"
+          }
+        },
+        "fb748c5f-ce21-4199-a2fb-bcc4958b7cbd": {
+          "type": "custom-liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div>\n<span class=\"inventory-icon\">\n{% if product.metafields.custom.skladem == true %}\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-warehouse-50.png?v=1683230284\" width=\"50\" height=\"50\" frameborder=\"0\" scrolling=\"no\" style=\"max-width:100%; max-height:100vw;\"><\/img><br>Skladem \n\n{% else %}\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0755\/1526\/5333\/files\/icons8-truck-100.png?v=1683230115\" width=\"50\"><\/img><br>Na cestě\n{% endif %}\n<\/span>\n<\/div>"
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "disabled": true,
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_pickup_availability": true
+          }
+        },
+        "message-1": {
+          "type": "message",
+          "settings": {
+            "icon": "clock",
+            "title": "<p><strong>Právě teď jsou populární<br\/><\/strong>Tento produkt si v poslední době prohlíží mnoho zákazníků.<\/p>",
+            "close": "once",
+            "show_over_media": true,
+            "visibility_duration": 4,
+            "bg_color": "#f4f4f4",
+            "text_color": "#b40c1c"
+          }
+        },
+        "message-2": {
+          "type": "message",
+          "settings": {
+            "icon": "price_tag",
+            "title": "<p><strong>Prodávají se rychle!<br\/><\/strong>Kupte si ten svůj dokuď jsou.<\/p>",
+            "close": "once",
+            "show_over_media": true,
+            "visibility_duration": 5,
+            "bg_color": "#b40c1c",
+            "text_color": "#ffffff"
+          }
+        },
+        "collapsible-content-2": {
+          "type": "collapsible-content",
+          "disabled": true,
+          "settings": {
+            "heading": "Doprava zdarma",
+            "icon": "truck",
+            "text": "<p>Add some general information about your delivery and shipping policies.<\/p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "message-3": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "title": "<p>Add a stand out message for your customers<\/p>",
+            "close": "once",
+            "show_over_media": false,
+            "visibility_duration": 7,
+            "bg_color": "#e4edfa",
+            "text_color": "#1a66d2"
+          }
+        },
+        "fd555dc9-fa22-4464-8a59-c9b3bc14be6f": {
+          "type": "collapsible-content",
+          "disabled": true,
+          "settings": {
+            "heading": "Popis",
+            "icon": "question_mark",
+            "text": "{{ product.metafields.custom.kratky_popis | metafield_tag }}",
+            "page": "",
+            "open": true
+          }
+        }
+      },
+      "block_order": [
+        "9b54a0e5-c077-4c4d-b987-a2c9c18a7525",
+        "variant-picker",
+        "divider-1",
+        "vendor-sku",
+        "title",
+        "cafa9602-40fc-4a98-96f2-985cf8fd1a67",
+        "a8bd77c7-585e-4f64-9f0d-7f2eb68b8816",
+        "divider-0",
+        "97e3fb95-e8e5-4640-b8cf-81f9031aa4c7",
+        "price",
+        "74fcb4e7-3982-4233-8412-790c84380ec6",
+        "fb748c5f-ce21-4199-a2fb-bcc4958b7cbd",
+        "buy-buttons",
+        "message-1",
+        "message-2",
+        "collapsible-content-2",
+        "share",
+        "message-3",
+        "fd555dc9-fa22-4464-8a59-c9b3bc14be6f"
+      ],
+      "settings": {
+        "stick_on_scroll": true,
+        "sticky_atc_panel": true,
+        "media_layout": "slider",
+        "media_size": "default",
+        "media_ratio": "1",
+        "media_crop": "none",
+        "hover_zoom": "original",
+        "enable_video_looping": false,
+        "stacked_scroll": "always",
+        "underline_active": true,
+        "media_thumbs": "desktop",
+        "thumb_ratio": "1",
+        "thumb_crop": "none",
+        "media_arrows": "desktop",
+        "show_slide_count": true,
+        "border_color": "#eeeeee",
+        "bg_color": "#f4f4f4",
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "tabs": {
+          "type": "tabs",
+          "disabled": true,
+          "settings": {
+            "style": "collapsible",
+            "show_description": true,
+            "show_specification": true,
+            "show_reviews": false,
+            "spec_metafields": "",
+            "spec_right_align": false,
+            "spec_show_empty_metafields": true,
+            "spec_empty_field_text": "-",
+            "tab_1_title": "",
+            "tab_1_text": "",
+            "tab_1_page": "",
+            "tab_2_title": "",
+            "tab_2_text": "",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_text": "",
+            "tab_3_page": ""
+          }
+        },
+        "2dc71c1b-947c-43bf-b36f-1d8291092554": {
+          "type": "custom-liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.rotation_url != blank %}\n<center><iframe class=\"rotation-desktop\" src=\"{{ product.metafields.custom.rotation_url }}\" frameborder=\"0\" scrolling=\"no\" style=\"width: 544px; height: 408px;\"><\/iframe><\/center>\n<center><iframe class=\"rotation-mobile\" src=\"{{ product.metafields.custom.rotation_url_mobile }}\" width=\"320\" frameborder=\"0\" scrolling=\"no\" style=\"width: 320px; height: 420px;\" ><\/iframe><\/center>\n{% endif %}"
+          }
+        },
+        "highlight-text": {
+          "type": "highlight-text",
+          "settings": {
+            "title": "Highlight title",
+            "text": "<p>Text to highlight a key feature of your product<\/p>"
+          }
+        },
+        "payment-methods": {
+          "type": "payment-methods",
+          "disabled": true,
+          "settings": {
+            "title": "Payment & Security",
+            "title1": "Payment methods",
+            "show_payment_icons": true,
+            "text1": "<p>Your payment information is processed securely. We do not store credit card details nor have access to your credit card information.<\/p>",
+            "title2": "",
+            "text2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tabs",
+        "2dc71c1b-947c-43bf-b36f-1d8291092554",
+        "highlight-text",
+        "payment-methods"
+      ],
+      "settings": {
+      }
+    },
+    "1221339f-89ec-4d52-a49b-b5d17a1ce64a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if product.metafields.custom.rotation_url != blank %}\n<center><iframe class=\"rotation-desktop\" src=\"{{ product.metafields.custom.rotation_url }}\" frameborder=\"0\" scrolling=\"no\" style=\"width: 544px; height: 408px;\"><\/iframe><\/center>\n<center><iframe class=\"rotation-mobile\" src=\"{{ product.metafields.custom.rotation_url_mobile }}\" width=\"320\" frameborder=\"0\" scrolling=\"no\" style=\"width: 320px; height: 420px;\" ><\/iframe><\/center>\n{% endif %}",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "product-features": {
+      "type": "product-features",
+      "blocks": {
+        "product-features-feature-0": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 28,
+            "hotspot_y": 38
+          }
+        },
+        "product-features-feature-1": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 60,
+            "hotspot_y": 29
+          }
+        },
+        "product-features-feature-2": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 73,
+            "hotspot_y": 54
+          }
+        },
+        "product-features-feature-3": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 50,
+            "hotspot_y": 66
+          }
+        }
+      },
+      "block_order": [
+        "product-features-feature-0",
+        "product-features-feature-1",
+        "product-features-feature-2",
+        "product-features-feature-3"
+      ],
+      "settings": {
+        "product": "",
+        "show_content": true,
+        "layout": "text_first",
+        "text_align": "text-center",
+        "mob_center_text": false,
+        "heading_size": "h1",
+        "enlarge_text": false,
+        "title": "Product features",
+        "description": "<p>Use this section to highlight specific product features to your customers.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "hotspot_color": "#070707",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "product-comparison-grid": {
+      "type": "product-comparison-grid",
+      "blocks": {
+        "comparison-product-1": {
+          "type": "product",
+          "settings": {
+            "show_image": true,
+            "show_title": true,
+            "show_button": true
+          }
+        },
+        "comparison-vendor-2": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "comparison-price-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "comparison-description-4": {
+          "type": "description",
+          "settings": {
+            "truncate_description": false,
+            "words_to_show": 20
+          }
+        }
+      },
+      "block_order": [
+        "comparison-product-1",
+        "comparison-vendor-2",
+        "comparison-price-3",
+        "comparison-description-4"
+      ],
+      "settings": {
+        "heading": "Product comparison grid",
+        "text": "<p>Add content here to explain a bit about the range of products on offer and which ones may be most suitable for your customers.<\/p>",
+        "heading_align": "text-center",
+        "view_more_label": "View more",
+        "view_more_link": "",
+        "product_list": [
+
+        ],
+        "empty_field_text": "-",
+        "image_ratio": "shortest",
+        "image_crop": "center",
+        "num_rows": 0,
+        "color_scheme": "none",
+        "highlight_row": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-list-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-list-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-list-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-list-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-list-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-list-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-list-collection-1",
+        "collection-list-collection-2",
+        "collection-list-collection-3",
+        "collection-list-collection-4",
+        "collection-list-collection-5",
+        "collection-list-collection-6"
+      ],
+      "settings": {
+        "title": "Our Collections",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "medium",
+        "use_product_image": false,
+        "circle_image": true
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "image-banner-heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "image-banner-text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "image-banner-button": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image-banner-heading",
+        "image-banner-text",
+        "image-banner-button"
+      ],
+      "settings": {
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 640,
+        "fixed_height_mobile": 480,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": false,
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "1221339f-89ec-4d52-a49b-b5d17a1ce64a",
+    "product-features",
+    "product-comparison-grid",
+    "collection-list",
+    "image-banner",
+    "recommendations"
+  ]
+}
